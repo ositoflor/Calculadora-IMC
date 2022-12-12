@@ -36,7 +36,7 @@ public class Pessoa implements Calculo{
     public void calularImc() {
         double resultImc = getPeso() / (getAltura() * getAltura());
 
-        System.out.printf(nome.toUpperCase() + " seu IMC é: %.1f %n", resultImc);
+        System.out.printf(getNome().toUpperCase() + " seu IMC é: %.1f %n", resultImc);
 
         if (resultImc < 18.5){
             System.out.println("Magreza");
